@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Página con encabezado, logo y carrusel</title>
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --accent:#2b6cb0;
+      --muted:#6b7280;
+      --padding:24px;
+      --logo-height:130px; /* controla el tamaño del logo aquí */
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,var(--bg), #e9eef7 60%);
+      color:#111827;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+    }
+
+    /* ==== ENCABEZADO ==== */
+    header{
+      width:100%;
+      padding:var(--padding);
+      background:var(--card);
+      box-shadow: 0 4px 20px rgba(15,23,42,0.08);
+      position: relative;
+    }
+
+    .header-container{
+      max-width:1200px;
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:20px;
+    }
+
+    .header-content{
+      text-align:center;
+      max-width:800px;
+    }
+
+    h1{
+      font-size:2.25rem;
+      margin-bottom:0.35rem;
+      color:var(--accent);
+    }
+
+    p.subtitle{
+      font-size:1.125rem;
+      color:var(--muted);
+      font-weight:bold;
+      text-transform:uppercase;
+    }
+
+    /* Nombre a la izquierda */
+    .header-left{
+      position:absolute;
+      left:0;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:0.95rem;
+      color: var(--muted);
+      font-weight:bold; /* nombre en negrita */
+      line-height:1.2rem;
+      padding-left:16px;
+      text-align:left;
+    }
+
+    /* Logo a la derecha */
+    .header-right{
+      position:absolute;
+      right:0;
+      top:50%;
+      transform:translateY(-50%);
+      text-align:right;
+    }
+
+    .logo{
+      height:var(--logo-height); /* tamaño controlable */
+      display:block;
+      margin:0 auto;
+    }
+
+    /* ==== TEXTO SOBRE CARRUSEL ==== */
+    .carousel-title{
+      text-align:center;
+      font-size:1.125rem; /* igual que subtítulo */
+      font-weight:bold;
+      text-transform:uppercase;
+      margin-top:2rem;
+      margin-bottom:1rem;
+      color:var(--muted);
+    }
+
+    /* ==== CARRUSEL ==== */
+    .carousel {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto 30px auto;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.6s ease-in-out;
+    }
+
+    .carousel img {
+      width: 100%;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+
+    .carousel button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      border: none;
+      color: #fff;
+      font-size: 2rem;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: background 0.3s;
+    }
+    .carousel button:hover {
+      background: rgba(0,0,0,0.8);
+    }
+    .prev { left: 15px; }
+    .next { right: 15px; }
+
+    /* ==== MAIN ==== */
+    main{
+      flex:1;
+      padding:2rem;
+      max-width:1100px;
+      margin:0 auto;
+    }
+
+    main p{
+      text-align:center;
+      margin-bottom:2rem;
+      font-size:1.1rem;
+    }
+
+    /* ==== BLOQUES ==== */
+    .blocks{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr); /* tres bloques en fila */
+      gap:20px;
+      justify-items:center;
+    }
+
+    /* Mover el cuarto bloque debajo del segundo */
+    .blocks a:nth-child(4){
+      grid-column:2 / 3; /* comienza en la columna 2 */
+    }
+
+    .block{
+      background:var(--card);
+      border-radius:12px;
+      padding:20px;
+      box-shadow:0 4px 16px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration:none;
+      color:inherit;
+      display:block;
+      width:100%;
+    }
+
+    .block:hover{
+      transform:translateY(-5px);
+      box-shadow:0 6px 20px rgba(0,0,0,0.12);
+    }
+
+    .block h2{
+      font-size:1.25rem;
+      margin-bottom:0.5rem;
+      color:var(--accent);
+    }
+
+    .block p{
+      font-size:0.95rem;
+      color:var(--muted);
+      text-align:left;
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="header-container">
+      <div class="header-left">
+        Sebastian David<br>Garcia Trejo
+      </div>
+
+      <div class="header-content">
+        <h1 id="page-title">PSICOLOGIA DEL APRENDIZAJE</h1>
+        <p class="subtitle">BLOQUE 1 - CICLO 4</p>
+      </div>
+
+      <div class="header-right">
+        <img src="https://ugb.edu.sv/wp-content/uploads/2023/06/UGB_LOGOTIPO_HORIZONTAL.png" alt="logo" class="logo">
+      </div>
+    </div>
+  </header>
+
+  <!-- Texto sobre carrusel -->
+  <div class="carousel-title">
+    DIA A DIA DE LAS CLASES
+  </div>
+
+  <!-- Carrusel infinito -->
+  <section class="carousel">
+    <div class="carousel-track">
+      <img src="https://picsum.photos/id/1025/900/400" alt="Imagen 5 clon">
+      <img src="https://picsum.photos/id/1015/900/400" alt="Imagen 1">
+      <img src="https://picsum.photos/id/1016/900/400" alt="Imagen 2">
+      <img src="https://picsum.photos/id/1018/900/400" alt="Imagen 3">
+      <img src="https://picsum.photos/id/1024/900/400" alt="Imagen 4">
+      <img src="https://picsum.photos/id/1025/900/400" alt="Imagen 5">
+      <img src="https://picsum.photos/id/1015/900/400" alt="Imagen 1 clon">
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </section>
+
+  <!-- Contenido principal -->
+  <main>
+    <p>La Psicología del Aprendizaje es la rama de la psicología que estudia y explica la adquisición, el mantenimiento y el cambio en el comportamiento de una persona como resultado de la experiencia.</p>
+    
+    <!-- Bloques con enlaces -->
+    <div class="blocks">
+      <a href="semana1.html" class="block">
+        <h2>Introducción al estudio de la Psicología del Aprendizaje</h2>
+        <p>Conceptos básicos y fundamentos iniciales para comprender la psicología del aprendizaje.</p>
+      </a>
+      <a href="semana2.html" class="block">
+        <h2>Desarrollo histórico de la Psicología del Aprendizaje</h2>
+        <p>Evolución de las teorías y aportes que han dado forma a esta disciplina.</p>
+      </a>
+      <a href="semana3.html" class="block">
+        <h2>Objeto de estudio de la Psicología del Aprendizaje</h2>
+        <p>Aspectos centrales que constituyen el campo de análisis de la psicología del aprendizaje.</p>
+      </a>
+      <a href="semana45.html" class="block">
+        <h2>Precursores de la Psicología del Aprendizaje</h2>
+        <p>Principales autores y corrientes que marcaron los inicios de esta rama de la psicología.</p>
+      </a>
+    </div>
+  </main>
+
+  <!-- Script carrusel -->
+  <script>
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    let index = 1;
+    const size = slides[0].clientWidth;
+
+    track.style.transform = `translateX(${-size * index}px)`;
+
+    function moveToSlide(i) {
+      track.style.transition = "transform 0.6s ease-in-out";
+      index = i;
+      track.style.transform = `translateX(${-size * index}px)`;
+    }
+
+    nextButton.addEventListener('click', () => {
+      if (index >= slides.length - 1) return;
+      moveToSlide(index + 1);
+    });
+
+    prevButton.addEventListener('click', () => {
+      if (index <= 0) return;
+      moveToSlide(index - 1);
+    });
+
+    track.addEventListener('transitionend', () => {
+      if (slides[index].alt.includes("clon")) {
+        track.style.transition = "none";
+        if (index === slides.length - 1) {
+          index = 1;
+        }
+        if (index === 0) {
+          index = slides.length - 2;
+        }
+        track.style.transform = `translateX(${-size * index}px)`;
+      }
+    });
+
+    setInterval(() => {
+      if (index >= slides.length - 1) return;
+      moveToSlide(index + 1);
+    }, 4000);
+  </script>
+</body>
+</html>
