@@ -1,21 +1,21 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introducción a la Psicología del Aprendizaje</title>
     <style>
-        /* Estilos generales */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background: linear-gradient(to right, #f0f4f8, #e6f0ff);
             color: #333;
         }
 
         /* Encabezado */
         header {
-            background-color: #004080;
+            background: linear-gradient(to right, #003366, #0055a5);
             color: white;
             display: flex;
             align-items: center;
@@ -23,36 +23,42 @@
         }
 
         header img {
-            height: 60px;
+            height: 65px;
             margin-right: 20px;
         }
 
         header h1 {
-            font-size: 28px;
+            font-size: 30px;
             font-weight: bold;
             margin: 0;
         }
 
         /* Contenedor principal */
         .container {
-            padding: 40px;
+            padding: 50px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 35px;
         }
 
-        /* Tarjetas de información */
+        /* Tarjetas */
         .card {
-            background-color: white;
-            border-radius: 15px;
+            background: white;
+            border-radius: 20px;
             padding: 25px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
             transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
         }
 
         .card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+        }
+
+        .card img {
+            width: 100px;
+            margin-bottom: 15px;
         }
 
         .card h2 {
@@ -66,25 +72,37 @@
             text-align: justify;
         }
 
-        /* Lista de tipos de aprendizaje */
         ul {
-            padding-left: 20px;
+            text-align: left;
         }
 
         ul li {
             margin-bottom: 10px;
         }
 
-        /* Pie de página */
-        footer {
-            background-color: #004080;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
+        /* Citas inspiradoras */
+        .quote {
+            font-style: italic;
+            font-size: 18px;
+            margin: 20px 0;
+            color: #555;
+            border-left: 4px solid #e67e22;
+            padding-left: 15px;
         }
 
-        /* Títulos creativos */
+        /* Pie de página */
+        footer {
+            background: linear-gradient(to right, #003366, #0055a5);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
         .highlight {
             color: #e67e22;
             font-weight: bold;
@@ -99,49 +117,58 @@
         <h1>INTRODUCCIÓN A LA PSICOLOGÍA DEL APRENDIZAJE</h1>
     </header>
 
-    <!-- Contenedor principal -->
+    <!-- Contenido principal -->
     <div class="container">
 
-        <!-- Qué es la psicología del aprendizaje -->
+        <!-- Qué es la Psicología del Aprendizaje -->
         <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Cerebro Icono">
             <h2>¿Qué es la Psicología del Aprendizaje?</h2>
             <p>
-                La <span class="highlight">Psicología del Aprendizaje</span> es la rama de la psicología que estudia cómo los individuos adquieren, retienen y aplican conocimientos y habilidades. 
-                Analiza los procesos mentales y conductuales que intervienen en la adquisición de nuevos conocimientos, la memoria, la atención, la motivación y la influencia del entorno en el aprendizaje. 
-                Su estudio permite optimizar métodos educativos y estrategias de enseñanza, adaptándolos a las necesidades del estudiante.
+                La <span class="highlight">Psicología del Aprendizaje</span> estudia cómo los seres humanos adquieren conocimientos, 
+                habilidades y actitudes. Examina los procesos de memoria, motivación, atención y las condiciones 
+                que facilitan o dificultan el aprendizaje. Su aplicación en la educación ha permitido crear 
+                estrategias más eficaces y adaptadas a las diferencias individuales.
             </p>
+            <div class="quote">"Aprender es el acto más humano que existe." – J.F. Brown</div>
         </div>
 
-        <!-- Qué es el aprendizaje -->
+        <!-- Qué es el Aprendizaje -->
         <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/201/201565.png" alt="Libro Icono">
             <h2>¿Qué es el Aprendizaje?</h2>
             <p>
-                El <span class="highlight">aprendizaje</span> es un proceso mediante el cual los individuos adquieren habilidades, conocimientos, comportamientos o valores a partir de la experiencia, la práctica o la instrucción. 
-                No se limita solo al ámbito académico, sino que también abarca la vida cotidiana y social. El aprendizaje implica cambios relativamente permanentes en la conducta, pensamiento o comprensión de un tema, y es fundamental para el desarrollo personal y profesional.
+                El <span class="highlight">aprendizaje</span> es un proceso de cambio relativamente permanente en el comportamiento, 
+                basado en la experiencia, la práctica o la instrucción. A través de él adquirimos habilidades, 
+                conocimientos, valores y actitudes que nos permiten desenvolvernos en distintos contextos. 
+                Aprender no solo ocurre en la escuela, sino también en la vida diaria, en el trabajo y en la interacción social.
             </p>
+            <div class="quote">"El aprendizaje no se limita al aula, está en cada experiencia de la vida."</div>
         </div>
 
-        <!-- Tipos de aprendizaje -->
+        <!-- Tipos de Aprendizaje -->
         <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135789.png" alt="Estudiante Icono">
             <h2>Tipos de Aprendizaje</h2>
-            <p>
-                Existen varios tipos de aprendizaje que se aplican en diferentes contextos. Entre los principales destacan:
-            </p>
+            <p>Los principales tipos de aprendizaje son:</p>
             <ul>
-                <li><strong>Aprendizaje por observación:</strong> Se aprende al observar las acciones de otros y sus consecuencias.</li>
-                <li><strong>Aprendizaje significativo:</strong> La información nueva se relaciona con conocimientos previos, generando comprensión profunda.</li>
-                <li><strong>Aprendizaje por ensayo y error:</strong> El individuo prueba diferentes estrategias hasta encontrar la correcta.</li>
-                <li><strong>Aprendizaje condicionante:</strong> Incluye el condicionamiento clásico (asociación de estímulos) y el operante (refuerzos y castigos).</li>
-                <li><strong>Aprendizaje cooperativo:</strong> Se realiza en grupo, donde se favorece la interacción y el intercambio de ideas.</li>
-                <li><strong>Aprendizaje autónomo:</strong> El estudiante toma la iniciativa de aprender de forma independiente.</li>
+                <li><strong>Observación:</strong> Aprender al mirar y replicar conductas.</li>
+                <li><strong>Significativo:</strong> Relacionar la información nueva con la que ya poseemos.</li>
+                <li><strong>Ensayo y error:</strong> Probar distintas estrategias hasta encontrar la correcta.</li>
+                <li><strong>Condicionamiento clásico:</strong> Asociación de estímulos.</li>
+                <li><strong>Condicionamiento operante:</strong> Refuerzos y castigos.</li>
+                <li><strong>Cooperativo:</strong> Aprender en grupo mediante el intercambio.</li>
+                <li><strong>Autónomo:</strong> Cuando el estudiante dirige su propio proceso.</li>
             </ul>
+            <div class="quote">"Enseñar es dejar una huella en el aprendizaje de alguien más."</div>
         </div>
 
     </div>
 
     <!-- Pie de página -->
     <footer>
-        &copy; 2025 José Fernando Menjívar Guevara - Introducción a la Psicología del Aprendizaje
+        <p>&copy; 2025 José Fernando Menjívar Guevara</p>
+        <p>Introducción a la Psicología del Aprendizaje</p>
     </footer>
 
 </body>
