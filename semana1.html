@@ -6,105 +6,176 @@
   <title>Introducción a la Psicología del Aprendizaje</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f4f4f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f6fa;
       color: #333;
     }
+
+    /* Encabezado */
     header {
+      background: #002855;
+      color: white;
+      padding: 20px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      background-color: #004080;
-      color: white;
-      padding: 15px 20px;
+      justify-content: space-between;
     }
+
     header img {
-      height: 80px;
-      margin-right: 20px;
+      height: 80px; /* Ajuste para proporción vertical */
     }
+
     header h1 {
-      font-size: 26px;
-      font-weight: bold;
       margin: 0;
-      text-align: center;
+      font-size: 1.8rem;
+      text-align: right;
+      flex: 1;
+      padding-left: 20px; /* Espacio entre logo y texto */
     }
+
+    /* Cuerpo */
     .container {
+      padding: 40px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      padding: 30px;
+      gap: 30px;
     }
+
     .card {
       background: white;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      padding: 20px;
-      transition: transform 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 25px;
+      transition: transform 0.3s ease;
     }
+
     .card:hover {
-      transform: translateY(-8px);
+      transform: translateY(-10px);
     }
+
+    .card img {
+      width: 60px;
+      display: block;
+      margin: 0 auto 15px auto;
+    }
+
     .card h2 {
       text-align: center;
-      color: #004080;
+      color: #002855;
     }
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-      margin: 15px 0;
+
+    .card p {
+      text-align: justify;
+      line-height: 1.6;
     }
+
+    .highlight {
+      color: #0056b3;
+      font-weight: bold;
+    }
+
+    .quote {
+      margin-top: 15px;
+      padding: 10px;
+      border-left: 4px solid #0056b3;
+      background: #f0f4ff;
+      font-style: italic;
+    }
+
+    /* Footer */
     footer {
-      text-align: center;
-      background-color: #004080;
+      background: #002855;
       color: white;
+      text-align: center;
       padding: 15px;
       margin-top: 30px;
+    }
+
+    footer .author {
+      font-weight: bold;
+      font-size: 1.1rem;
     }
   </style>
 </head>
 <body>
+  <!-- Encabezado -->
   <header>
-    <img src="https://talentohumano.ugb.edu.sv/Assets/img/logos/logo_blanco_vertical.png" alt="Logo UGB">
-    <h1>INTRODUCCION A LA PSICOLOGIA DEL APRENDIZAJE</h1>
+    <img src="https://talentohumano.ugb.edu.sv/Assets/img/logos/logo_blanco_vertical.png" alt="Logo UGB Vertical Blanco">
+    <h1>INTRODUCCIÓN A LA PSICOLOGÍA DEL APRENDIZAJE</h1>
   </header>
 
+  <!-- Contenido -->
   <div class="container">
+    <!-- Qué es la Psicología del Aprendizaje -->
     <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Cerebro Icono">
       <h2>¿Qué es la Psicología del Aprendizaje?</h2>
-      <img src="https://cdn.pixabay.com/photo/2016/11/29/05/08/brain-1867220_960_720.jpg" alt="Psicología del Aprendizaje">
-      <p>La psicología del aprendizaje es una rama de la psicología que estudia cómo los seres humanos y los animales adquieren conocimientos, habilidades, conductas y actitudes a lo largo de su vida.</p>
-      <p>Se interesa en procesos internos como la memoria, la atención, la motivación, las emociones y el entorno, que influyen directamente en la manera en que se aprende. Además, busca explicar por qué unas experiencias generan aprendizajes más significativos y duraderos que otras.</p>
-      <p>Este campo también proporciona las bases para mejorar métodos de enseñanza, programas educativos y terapias, contribuyendo tanto en la escuela como en el trabajo o la vida cotidiana.</p>
+      <p>
+        La <span class="highlight">Psicología del Aprendizaje</span> es una rama de la psicología que estudia los procesos 
+        mediante los cuales las personas adquieren y desarrollan conocimientos, habilidades, actitudes y valores. 
+        Se centra en comprender cómo influyen la memoria, la motivación, la atención y el entorno en el proceso de aprender. 
+      </p>
+      <p>
+        Sus aportes no solo se aplican en el ámbito educativo, sino también en el desarrollo personal, la formación profesional, 
+        la psicoterapia y el entrenamiento en organizaciones. Por ejemplo, nos ayuda a entender por qué algunas técnicas de 
+        estudio son más efectivas que otras y cómo las emociones pueden potenciar o dificultar el aprendizaje.
+      </p>
+      <p>
+        Gracias a esta disciplina, se han desarrollado métodos como el aprendizaje significativo, el refuerzo positivo 
+        y el uso de la motivación intrínseca para mejorar el rendimiento académico y personal.
+      </p>
+      <div class="quote">"Aprender es el acto más humano que existe." – J.F. Brown</div>
     </div>
 
+    <!-- Qué es el Aprendizaje -->
     <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/201/201565.png" alt="Libro Icono">
       <h2>¿Qué es el Aprendizaje?</h2>
-      <img src="https://cdn.pixabay.com/photo/2015/01/09/11/11/student-594125_960_720.jpg" alt="Aprendizaje">
-      <p>El aprendizaje es un proceso de cambio relativamente permanente en la conducta, el pensamiento o las habilidades de una persona como resultado de la experiencia, el estudio o la enseñanza.</p>
-      <p>No se limita a memorizar información, sino que implica comprenderla, aplicarla y transferirla a distintas situaciones de la vida. Por ejemplo, aprender a leer, resolver problemas matemáticos o manejar una bicicleta.</p>
-      <p>Las teorías psicológicas ofrecen diversas explicaciones: para el conductismo, el aprendizaje es la modificación de la conducta; para el cognitivismo, implica la organización de conocimientos en la mente; y para el constructivismo, se construye activamente en interacción con el entorno.</p>
+      <p>
+        El <span class="highlight">aprendizaje</span> es un proceso dinámico de cambio relativamente permanente en el 
+        comportamiento, pensamiento o conocimiento, que ocurre gracias a la experiencia, la práctica o la instrucción. 
+        Es la base de la adaptación humana, ya que nos permite enfrentarnos a situaciones nuevas, resolver problemas y 
+        desarrollar competencias en distintos ámbitos de la vida.
+      </p>
+      <p>
+        Aprender no es un proceso uniforme: cada persona lo hace a su propio ritmo y de acuerdo a sus capacidades y 
+        estilos cognitivos. El aprendizaje implica no solo adquirir información, sino también reflexionar sobre ella, 
+        relacionarla con experiencias previas y aplicarla en contextos reales.
+      </p>
+      <p>
+        Además, el aprendizaje puede ser formal (como en la educación escolarizada) o informal (a través de experiencias 
+        de la vida cotidiana). Ambos son igual de importantes y se complementan para formar individuos más completos.
+      </p>
+      <div class="quote">"El aprendizaje no se limita al aula, está en cada experiencia de la vida."</div>
     </div>
 
+    <!-- Tipos de Aprendizaje -->
     <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3159/3159310.png" alt="Tipos de Aprendizaje">
       <h2>Tipos de Aprendizaje</h2>
-      <img src="https://cdn.pixabay.com/photo/2016/11/23/14/45/books-1850645_960_720.jpg" alt="Tipos de Aprendizaje">
-      <p>Existen múltiples formas de clasificar el aprendizaje. Algunos de los principales tipos son:</p>
+      <p>
+        Existen diversos tipos de aprendizaje que responden a distintos procesos cognitivos y contextos. 
+        Reconocerlos permite adaptar las estrategias educativas a las necesidades de cada persona.
+      </p>
       <ul>
-        <li><b>Aprendizaje por condicionamiento clásico:</b> asociación de un estímulo con una respuesta (Pavlov).</li>
-        <li><b>Aprendizaje por condicionamiento operante:</b> refuerzos y castigos que aumentan o disminuyen conductas (Skinner).</li>
-        <li><b>Aprendizaje observacional:</b> adquisición de conductas al observar a otros (Bandura).</li>
-        <li><b>Aprendizaje significativo:</b> integración de nueva información con conocimientos previos (Ausubel).</li>
-        <li><b>Aprendizaje experiencial:</b> aprender haciendo, a través de la práctica y la experiencia directa.</li>
-        <li><b>Aprendizaje colaborativo:</b> construcción de conocimientos en interacción con otros.</li>
+        <li><span class="highlight">Aprendizaje Visual:</span> Se basa en imágenes, diagramas y colores. Ideal para quienes recuerdan mejor lo que ven.</li>
+        <li><span class="highlight">Aprendizaje Auditivo:</span> Se centra en la escucha. Explicaciones, podcasts y discusiones son clave.</li>
+        <li><span class="highlight">Aprendizaje Kinestésico:</span> Ocurre mediante la práctica y la manipulación de objetos.</li>
+        <li><span class="highlight">Aprendizaje Significativo:</span> Relaciona lo nuevo con conocimientos previos, facilitando la comprensión profunda.</li>
+        <li><span class="highlight">Aprendizaje Colaborativo:</span> Se desarrolla en interacción con otros, promoviendo el trabajo en equipo.</li>
       </ul>
-      <p>En la actualidad, se reconoce que cada persona aprende de manera distinta, y que la combinación de varios tipos de aprendizaje permite un desarrollo más integral.</p>
+      <p>
+        Cada tipo de aprendizaje aporta un enfoque único. Por ejemplo, un estudiante puede combinar aprendizaje visual y kinestésico 
+        para reforzar sus conocimientos de manera más sólida.
+      </p>
+      <div class="quote">"Cada persona aprende de manera distinta, pero todos tenemos la capacidad de aprender."</div>
     </div>
   </div>
 
+  <!-- Footer -->
   <footer>
-    <p>Elaborado por: <b>Sebastian David Garcia Trejo</b></p>
+    © 2025 - Universidad Gerardo Barrios | Elaborado por <span class="author">Sebastián David García Trejo</span>
   </footer>
 </body>
 </html>
