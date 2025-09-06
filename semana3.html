@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objeto de Estudio de la Psicología del Aprendizaje</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+      color: #333;
+    }
+
+    /* Encabezado */
+    header {
+      background: #003366;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 80px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      text-align: right;
+      flex: 1;
+      padding-left: 20px;
+    }
+
+    /* Cuerpo */
+    .container {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 25px;
+      transition: transform 0.3s ease;
+      text-align: left; /* Asegura que todo el texto se alinee a la izquierda */
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img:not(.block5-logo) {
+      width: 60px;
+      display: block;
+      margin: 0 auto 15px auto;
+    }
+
+    .card h2 {
+      text-align: center;
+      color: #003366;
+    }
+
+    .card p, .card ul {
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    .card ul li {
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      color: #0056b3;
+      font-weight: bold;
+    }
+
+    .quote {
+      margin-top: 15px;
+      padding: 10px;
+      border-left: 4px solid #0056b3;
+      background: #e6f0ff;
+      font-style: italic;
+    }
+
+    /* Último bloque: logo y título a la izquierda */
+    .card:last-child {
+      grid-column: 1 / -1;
+      padding: 30px;
+    }
+
+    .card:last-child .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; /* Forzamos alineamiento a la izquierda */
+      margin-bottom: 20px;
+    }
+
+    .card:last-child .header-row img {
+      width: 60px;
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    .card:last-child .header-row h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #003366;
+      text-align: left; /* Asegura que el título quede a la izquierda */
+    }
+
+    .card:last-child .content {
+      width: 100%;
+    }
+
+    /* Footer */
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    footer .author {
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <img src="https://talentohumano.ugb.edu.sv/Assets/img/logos/logo_blanco_vertical.png" alt="Logo UGB Vertical Blanco">
+    <h1>OBJETO DE ESTUDIO DE LA PSICOLOGÍA DEL APRENDIZAJE</h1>
+  </header>
+
+  <!-- Contenido -->
+  <div class="container">
+    <!-- Objeto de Estudio -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Cerebro Icono">
+      <h2>Objeto de Estudio</h2>
+      <p>
+        La Psicología del Aprendizaje se enfoca en comprender cómo los individuos adquieren, procesan y aplican conocimientos. 
+        Su objeto de estudio incluye la memoria, la atención, la motivación y las estrategias que facilitan el aprendizaje efectivo.
+      </p>
+      <div class="quote">"Entender cómo aprendemos es la clave para transformar la educación." – Autor Anónimo</div>
+    </div>
+
+    <!-- Relación con la Educación -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2910/2910795.png" alt="Educación Icono">
+      <h2>Psicología del Aprendizaje y Educación</h2>
+      <p>
+        La psicología del aprendizaje colabora con la educación para desarrollar métodos de enseñanza más efectivos. 
+        Se centra en diseñar estrategias que optimicen la comprensión, fomenten la participación activa y promuevan habilidades críticas en los estudiantes.
+      </p>
+      <div class="quote">"Aprender no es solo recibir información, es transformarla en conocimiento." – Inspirado en Piaget</div>
+    </div>
+
+    <!-- Relación con la Terapia de Conducta -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2910/2910782.png" alt="Terapia Icono">
+      <h2>Psicología del Aprendizaje y Terapia de Conducta</h2>
+      <p>
+        El aprendizaje también se aplica en terapias de conducta para modificar hábitos y comportamientos. 
+        Principios de refuerzo y modelado permiten que las intervenciones sean más efectivas y se adapten a las necesidades individuales.
+      </p>
+      <div class="quote">"El cambio de conducta empieza por comprender cómo aprendemos." – B.F. Skinner</div>
+    </div>
+
+    <!-- Relación con la Neurociencia -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2910/2910785.png" alt="Neurociencia Icono">
+      <h2>Psicología del Aprendizaje y Neurociencia</h2>
+      <p>
+        La neurociencia estudia los mecanismos cerebrales del aprendizaje, permitiendo a la psicología del aprendizaje identificar cómo la memoria y la atención influyen en la adquisición de conocimientos. 
+        Esto facilita técnicas de aprendizaje más precisas y personalizadas.
+      </p>
+      <div class="quote">"Comprender el cerebro nos permite aprender mejor." – Inspirado en Vygotsky</div>
+    </div>
+
+    <!-- Propósitos en la Sociedad -->
+    <div class="card">
+      <div class="header-row">
+        <img src="https://cdn-icons-png.flaticon.com/512/2910/2910787.png" alt="Propósitos Icono" class="block5-logo">
+        <h2>Propósitos en la Sociedad</h2>
+      </div>
+      <div class="content">
+        <ul>
+          <li><span class="highlight">Comprender los procesos de aprendizaje:</span> Analizar cómo se adquieren conocimientos y habilidades, evaluando tanto factores internos como externos que influyen en el aprendizaje.</li>
+          <li><span class="highlight">Desarrollar técnicas innovadoras:</span> Crear métodos educativos y herramientas que faciliten el aprendizaje mediante tecnología y estrategias didácticas modernas.</li>
+          <li><span class="highlight">Contribuir a la educación especial e inclusión:</span> Adaptar estrategias para necesidades diversas y promover igualdad de oportunidades en distintos contextos educativos.</li>
+          <li><span class="highlight">Identificar barreras del aprendizaje:</span> Detectar factores emocionales, cognitivos y ambientales que dificultan la adquisición de conocimientos y diseñar soluciones prácticas.</li>
+          <li><span class="highlight">Optimizar la motivación:</span> Fomentar el interés, la perseverancia y la disposición hacia el aprendizaje continuo, promoviendo autonomía en los estudiantes.</li>
+        </ul>
+        <p>Estos propósitos buscan que la Psicología del Aprendizaje no solo comprenda los procesos de adquisición de conocimiento, sino que también contribuya activamente a mejorar la educación y el desarrollo de habilidades en la sociedad actual.</p>
+        <div class="quote">"El aprendizaje transforma individuos y sociedades." – Autor Anónimo</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 - Universidad Gerardo Barrios | Elaborado por <span class="author">Sebastián David García Trejo</span>
+  </footer>
+</body>
+</html>
