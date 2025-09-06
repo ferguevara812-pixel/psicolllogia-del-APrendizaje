@@ -1,198 +1,175 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introducción a la Psicología del Aprendizaje</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #f0f4f8, #e6f0ff);
-            color: #333;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introducción a la Psicología del Aprendizaje</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f6fa;
+      color: #333;
+    }
 
-        /* Encabezado */
-        header {
-            background: linear-gradient(to right, #003366, #0055a5);
-            color: white;
-            display: flex;
-            align-items: center;
-            padding: 20px 40px;
-        }
+    /* Encabezado */
+    header {
+      background: #002855;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-        header img {
-            height: 65px;
-            margin-right: 20px;
-        }
+    header img {
+      height: 60px;
+    }
 
-        header h1 {
-            font-size: 30px;
-            font-weight: bold;
-            margin: 0;
-        }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      text-align: right;
+      flex: 1;
+    }
 
-        /* Contenedor principal */
-        .container {
-            padding: 50px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 35px;
-        }
+    /* Cuerpo */
+    .container {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
 
-        /* Tarjetas */
-        .card {
-            background: white;
-            border-radius: 20px;
-            padding: 25px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-            transition: transform 0.3s, box-shadow 0.3s;
-            text-align: center;
-        }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 25px;
+      transition: transform 0.3s ease;
+    }
 
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.18);
-        }
+    .card:hover {
+      transform: translateY(-10px);
+    }
 
-        .card img {
-            width: 100px;
-            margin-bottom: 15px;
-        }
+    .card img {
+      width: 60px;
+      display: block;
+      margin: 0 auto 15px auto;
+    }
 
-        .card h2 {
-            color: #004080;
-            font-size: 22px;
-            margin-bottom: 15px;
-        }
+    .card h2 {
+      text-align: center;
+      color: #002855;
+    }
 
-        .card p {
-            line-height: 1.6;
-            text-align: justify;
-        }
+    .card p {
+      text-align: justify;
+      line-height: 1.6;
+    }
 
-        ul {
-            text-align: left;
-        }
+    .highlight {
+      color: #0056b3;
+      font-weight: bold;
+    }
 
-        ul li {
-            margin-bottom: 10px;
-        }
+    .quote {
+      margin-top: 15px;
+      padding: 10px;
+      border-left: 4px solid #0056b3;
+      background: #f0f4ff;
+      font-style: italic;
+    }
 
-        /* Citas inspiradoras */
-        .quote {
-            font-style: italic;
-            font-size: 18px;
-            margin: 20px 0;
-            color: #555;
-            border-left: 4px solid #e67e22;
-            padding-left: 15px;
-        }
-
-        /* Pie de página */
-        footer {
-            background: linear-gradient(to right, #003366, #0055a5);
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 50px;
-        }
-
-        footer p {
-            margin: 5px 0;
-        }
-
-        .highlight {
-            color: #e67e22;
-            font-weight: bold;
-        }
-    </style>
+    /* Footer */
+    footer {
+      background: #002855;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
+  <!-- Encabezado -->
+  <header>
+    <img src="https://ugb.edu.sv/wp-content/uploads/2023/06/UGB_LOGOTIPO_HORIZONTAL-BLANCO.png" alt="Logo UGB">
+    <h1>INTRODUCCIÓN A LA PSICOLOGÍA DEL APRENDIZAJE</h1>
+  </header>
 
-    <!-- Encabezado -->
-    <header>
-        <img src="https://ugb.edu.sv/wp-content/uploads/2023/06/UGB_LOGOTIPO_HORIZONTAL.png" alt="Logo UGB">
-        <h1>INTRODUCCIÓN A LA PSICOLOGÍA DEL APRENDIZAJE</h1>
-    </header>
-
-    <!-- Contenido principal -->
-    <div class="container">
-
-        <!-- Qué es la Psicología del Aprendizaje -->
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Cerebro Icono">
-            <h2>¿Qué es la Psicología del Aprendizaje?</h2>
-            <p>
-                La <span class="highlight">Psicología del Aprendizaje</span> es una rama de la psicología que estudia los procesos 
-                mediante los cuales las personas adquieren y desarrollan conocimientos, habilidades, actitudes y valores. 
-                Se centra en comprender cómo influyen la memoria, la motivación, la atención y el entorno en el proceso de aprender. 
-            </p>
-            <p>
-                Sus aportes no solo se aplican en el ámbito educativo, sino también en el desarrollo personal, la formación profesional, 
-                la psicoterapia y el entrenamiento en organizaciones. Por ejemplo, nos ayuda a entender por qué algunas técnicas de 
-                estudio son más efectivas que otras y cómo las emociones pueden potenciar o dificultar el aprendizaje.
-            </p>
-            <p>
-                Gracias a esta disciplina, se han desarrollado métodos como el aprendizaje significativo, el refuerzo positivo 
-                y el uso de la motivación intrínseca para mejorar el rendimiento académico y personal.
-            </p>
-            <div class="quote">"Aprender es el acto más humano que existe." – J.F. Brown</div>
-        </div>
-
-        <!-- Qué es el Aprendizaje -->
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/201/201565.png" alt="Libro Icono">
-            <h2>¿Qué es el Aprendizaje?</h2>
-            <p>
-                El <span class="highlight">aprendizaje</span> es un proceso dinámico de cambio relativamente permanente en el 
-                comportamiento, pensamiento o conocimiento, que ocurre gracias a la experiencia, la práctica o la instrucción. 
-                Es la base de la adaptación humana, ya que nos permite enfrentarnos a situaciones nuevas, resolver problemas y 
-                desarrollar competencias en distintos ámbitos de la vida.
-            </p>
-            <p>
-                Aprender no es un proceso uniforme: cada persona lo hace a su propio ritmo y de acuerdo a sus capacidades y 
-                estilos cognitivos. El aprendizaje implica no solo adquirir información, sino también reflexionar sobre ella, 
-                relacionarla con experiencias previas y aplicarla en contextos reales.
-            </p>
-            <p>
-                Además, el aprendizaje puede ser formal (como en la educación escolarizada) o informal (a través de experiencias 
-                de la vida cotidiana). Ambos son igual de importantes y se complementan para formar individuos más completos.
-            </p>
-            <div class="quote">"El aprendizaje no se limita al aula, está en cada experiencia de la vida."</div>
-        </div>
-
-        <!-- Tipos de Aprendizaje -->
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135789.png" alt="Estudiante Icono">
-            <h2>Tipos de Aprendizaje</h2>
-            <p>Los principales tipos de aprendizaje son:</p>
-            <ul>
-                <li><strong>Observación:</strong> Aprender al mirar y replicar conductas.</li>
-                <li><strong>Significativo:</strong> Relacionar la información nueva con la que ya poseemos.</li>
-                <li><strong>Ensayo y error:</strong> Probar distintas estrategias hasta encontrar la correcta.</li>
-                <li><strong>Condicionamiento clásico:</strong> Asociación de estímulos.</li>
-                <li><strong>Condicionamiento operante:</strong> Refuerzos y castigos.</li>
-                <li><strong>Cooperativo:</strong> Aprender en grupo mediante el intercambio.</li>
-                <li><strong>Autónomo:</strong> Cuando el estudiante dirige su propio proceso.</li>
-            </ul>
-            <p>
-                Cada tipo de aprendizaje tiene aplicaciones prácticas: por ejemplo, el <em>aprendizaje por observación</em> 
-                se da cuando un niño aprende imitando a sus padres; el <em>aprendizaje significativo</em> se fomenta en las aulas 
-                cuando los docentes conectan conceptos nuevos con conocimientos previos; y el <em>condicionamiento operante</em> 
-                se utiliza en la crianza o en entornos laborales mediante recompensas o sanciones.
-            </p>
-            <div class="quote">"Enseñar es dejar una huella en el aprendizaje de alguien más."</div>
-        </div>
-
+  <!-- Contenido -->
+  <div class="container">
+    <!-- Qué es la Psicología del Aprendizaje -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Cerebro Icono">
+      <h2>¿Qué es la Psicología del Aprendizaje?</h2>
+      <p>
+        La <span class="highlight">Psicología del Aprendizaje</span> es una rama de la psicología que estudia los procesos 
+        mediante los cuales las personas adquieren y desarrollan conocimientos, habilidades, actitudes y valores. 
+        Se centra en comprender cómo influyen la memoria, la motivación, la atención y el entorno en el proceso de aprender. 
+      </p>
+      <p>
+        Sus aportes no solo se aplican en el ámbito educativo, sino también en el desarrollo personal, la formación profesional, 
+        la psicoterapia y el entrenamiento en organizaciones. Por ejemplo, nos ayuda a entender por qué algunas técnicas de 
+        estudio son más efectivas que otras y cómo las emociones pueden potenciar o dificultar el aprendizaje.
+      </p>
+      <p>
+        Gracias a esta disciplina, se han desarrollado métodos como el aprendizaje significativo, el refuerzo positivo 
+        y el uso de la motivación intrínseca para mejorar el rendimiento académico y personal.
+      </p>
+      <div class="quote">"Aprender es el acto más humano que existe." – J.F. Brown</div>
     </div>
 
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2025 José Fernando Menjívar Guevara</p>
-        <p>Introducción a la Psicología del Aprendizaje</p>
-    </footer>
+    <!-- Qué es el Aprendizaje -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/201/201565.png" alt="Libro Icono">
+      <h2>¿Qué es el Aprendizaje?</h2>
+      <p>
+        El <span class="highlight">aprendizaje</span> es un proceso dinámico de cambio relativamente permanente en el 
+        comportamiento, pensamiento o conocimiento, que ocurre gracias a la experiencia, la práctica o la instrucción. 
+        Es la base de la adaptación humana, ya que nos permite enfrentarnos a situaciones nuevas, resolver problemas y 
+        desarrollar competencias en distintos ámbitos de la vida.
+      </p>
+      <p>
+        Aprender no es un proceso uniforme: cada persona lo hace a su propio ritmo y de acuerdo a sus capacidades y 
+        estilos cognitivos. El aprendizaje implica no solo adquirir información, sino también reflexionar sobre ella, 
+        relacionarla con experiencias previas y aplicarla en contextos reales.
+      </p>
+      <p>
+        Además, el aprendizaje puede ser formal (como en la educación escolarizada) o informal (a través de experiencias 
+        de la vida cotidiana). Ambos son igual de importantes y se complementan para formar individuos más completos.
+      </p>
+      <div class="quote">"El aprendizaje no se limita al aula, está en cada experiencia de la vida."</div>
+    </div>
 
+    <!-- Tipos de Aprendizaje -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3159/3159310.png" alt="Tipos de Aprendizaje">
+      <h2>Tipos de Aprendizaje</h2>
+      <p>
+        Existen diversos tipos de aprendizaje que responden a distintos procesos cognitivos y contextos. 
+        Reconocerlos permite adaptar las estrategias educativas a las necesidades de cada persona.
+      </p>
+      <ul>
+        <li><span class="highlight">Aprendizaje Visual:</span> Se basa en imágenes, diagramas y colores. Ideal para quienes recuerdan mejor lo que ven.</li>
+        <li><span class="highlight">Aprendizaje Auditivo:</span> Se centra en la escucha. Explicaciones, podcasts y discusiones son clave.</li>
+        <li><span class="highlight">Aprendizaje Kinestésico:</span> Ocurre mediante la práctica y la manipulación de objetos.</li>
+        <li><span class="highlight">Aprendizaje Significativo:</span> Relaciona lo nuevo con conocimientos previos, facilitando la comprensión profunda.</li>
+        <li><span class="highlight">Aprendizaje Colaborativo:</span> Se desarrolla en interacción con otros, promoviendo el trabajo en equipo.</li>
+      </ul>
+      <p>
+        Cada tipo de aprendizaje aporta un enfoque único. Por ejemplo, un estudiante puede combinar aprendizaje visual y kinestésico 
+        para reforzar sus conocimientos de manera más sólida.
+      </p>
+      <div class="quote">"Cada persona aprende de manera distinta, pero todos tenemos la capacidad de aprender."</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 - Universidad Gerardo Barrios | Elaborado por José Fernando Menjívar Guevara
+  </footer>
 </body>
 </html>
